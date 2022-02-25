@@ -1,0 +1,14 @@
+:root {
+  --heading-font: "Libre Caslon Display", serif;
+  --default-font: "Roboto", sans-serif;
+  --primary-color: rgba(211, 197, 175, 0.24);
+  --secondary-color: #803c3e;
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  margin: 0px 10px 0px 10px;
+}
