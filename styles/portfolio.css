@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@400;500;700&display=swap");
+
 :root {
-  --heading-font: "Libre Caslon Display", serif;
+  --heading-font: "Italiana", serif;
   --default-font: "Roboto", sans-serif;
   --primary-color: #f4f1ec;
   --secondary-color: #803c3e;
@@ -9,6 +11,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -59,16 +62,6 @@ a.nav-link:hover:before {
   visibility: visible;
   transform: scaleX(1);
 }
-/*--- Hero section ---*/
-
-.container {
-  padding: 120px 0px 0px 0px;
-  background-color: var(--primary-color);
-  max-width: 100%;
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
 
 section {
   display: flex;
@@ -78,11 +71,28 @@ section {
   height: 100vh;
 }
 
+h2 {
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+}
+
+.container {
+  padding: 0px;
+  background-color: var(--primary-color);
+  max-width: 100%;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+/*--- Hero section ---*/
+
 .hero-heading {
   width: 100%;
   text-align: end;
   z-index: 1;
-  margin-right: -228px;
+  margin-right: -260px;
 }
 
 .hero-heading h1 {
@@ -92,8 +102,11 @@ section {
 }
 
 .hero-heading p {
-  font-size: 35px;
+  font-size: 32px;
   letter-spacing: 0.1em;
+  opacity: 0.9;
+  color: var(--secondary-color);
+  margin-right: -20px;
 }
 
 .hero-image {
@@ -103,4 +116,24 @@ section {
 .hero-image img {
   width: 100%;
   mix-blend-mode: multiply;
+}
+
+/*--- About section ---*/
+
+.about {
+  background-color: white;
+}
+.about-heading {
+  align-self: flex-start;
+  margin-top: 100px;
+}
+
+/*--- Projects section ---*/
+
+.projects {
+  background-color: white;
+}
+.projects-heading {
+  align-self: flex-start;
+  margin-top: 100px;
 }
