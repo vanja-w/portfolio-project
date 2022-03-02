@@ -5,6 +5,20 @@
   --secondary-color: #803c3e;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--default-font);
+  font-size: 16px;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+
+/*--- Navbar ---*/
 .navbar {
   padding: 15px 50px;
   background-color: var(--primary-color);
@@ -44,4 +58,49 @@ a.nav-link:before {
 a.nav-link:hover:before {
   visibility: visible;
   transform: scaleX(1);
+}
+/*--- Hero section ---*/
+
+.container {
+  padding: 120px 0px 0px 0px;
+  background-color: var(--primary-color);
+  max-width: 100%;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+.hero-heading {
+  width: 100%;
+  text-align: end;
+  z-index: 1;
+  margin-right: -228px;
+}
+
+.hero-heading h1 {
+  font-size: 120px;
+  font-family: var(--heading-font);
+  letter-spacing: 0.1em;
+}
+
+.hero-heading p {
+  font-size: 35px;
+  letter-spacing: 0.1em;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  mix-blend-mode: multiply;
 }
