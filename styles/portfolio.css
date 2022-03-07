@@ -72,9 +72,13 @@ section {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 50px;
   letter-spacing: 0.1em;
   font-weight: 100;
+  padding-bottom: 60px;
+  color: var(--secondary-color);
+  font-family: var(--heading-font);
+  font-weight: 700;
 }
 
 .container {
@@ -146,10 +150,34 @@ h2 {
 
 .about {
   background-color: white;
+  flex-direction: column;
 }
-.about-heading {
-  align-self: flex-start;
-  margin-top: 100px;
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  background-color: var(--primary-color);
+  max-width: 75%;
+}
+.about-text {
+  text-align: justify;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  padding: 40px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: left;
+}
+
+.about-image img {
+  width: 90%;
 }
 
 /*--- Projects section ---*/
