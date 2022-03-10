@@ -221,7 +221,11 @@ h2 {
 }
 /*--- Contact section ---*/
 
-.contact-container {
+footer .container {
+  min-height: 0vh;
+}
+
+.contact {
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
@@ -246,7 +250,8 @@ h2 {
   background-color: var(--secondary-color);
   border-color: white;
   border-radius: 50%;
-  font-size: 20px;
+  padding: 9px 16px;
+  font-size: 22px;
 }
 
 .contact-link:visited {
@@ -257,6 +262,7 @@ h2 {
   color: var(--secondary-color);
   border-color: var(--secondary-color);
   background-color: white;
+  transition: all 100ms ease-in-out;
 }
 
 footer small {
@@ -272,5 +278,5 @@ footer a {
 }
 
 footer a:hover {
-  color: rgb(68, 183, 255);
+  color: rgb(45, 163, 236);
 }
