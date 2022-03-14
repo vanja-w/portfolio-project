@@ -69,13 +69,17 @@ section {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 48px;
   letter-spacing: 0.1em;
   color: var(--secondary-color);
   font-family: var(--heading-font);
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   margin-top: 100px;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 .container {
@@ -122,12 +126,14 @@ h2 {
 
 .hero-heading h1 {
   font-size: 120px;
+  font-size: 7.9vw;
   font-family: var(--heading-font);
   letter-spacing: 0.1em;
 }
 
 .hero-heading p {
   font-size: 32px;
+  font-size: 2vw;
   letter-spacing: 0.1em;
   opacity: 0.9;
   color: var(--secondary-color);
@@ -157,16 +163,17 @@ h2 {
   justify-content: center;
   scroll-snap-align: start;
   background-color: var(--primary-color);
-  max-width: 70%;
+  max-width: 75%;
 }
 .about-text {
   text-align: justify;
 }
 
 .about-text p {
-  font-size: 17px;
-  line-height: 1.8;
+  font-size: 16px;
+  line-height: 1.6;
   padding: 40px;
+  margin-bottom: 0px;
 }
 
 .about-image {
@@ -183,21 +190,28 @@ h2 {
 .projects {
   background-color: white;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .projects-content {
-  max-width: 55%;
+  max-width: 70%;
 }
 
 .app-info {
+  font-size: 16px;
   text-align: justify;
   background-color: var(--primary-color);
   padding: 15px 25px;
 }
 
 .app-sub-info {
+  font-size: 14px;
   color: var(--secondary-color);
   letter-spacing: 0.1em;
+}
+
+.app-links-right {
+  justify-content: flex-end;
 }
 
 .app-link {
@@ -236,14 +250,14 @@ footer .container {
 .contact-heading h2 {
   color: var(--primary-color);
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .contact-info {
   display: flex;
-  width: 15%;
+  width: 28%;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .contact-link {
@@ -279,4 +293,198 @@ footer a {
 
 footer a:hover {
   color: rgb(45, 163, 236);
+}
+/*--- Media queries ---*/
+
+@media (max-width: 1500px) {
+  .hero-heading {
+    margin-right: -150px;
+  }
+
+  .about-text p {
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 1300px) {
+  .hero-heading {
+    margin-right: -110px;
+  }
+  .about-text p {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 1300px) {
+  .hero-heading {
+    margin-right: -95px;
+  }
+  .about-text p {
+    padding: 30px;
+  }
+}
+@media (max-width: 1100px) {
+  .hero-heading {
+    margin-right: -85px;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-link {
+    padding: 5px 11px;
+    font-size: 17px;
+  }
+  footer small {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-heading {
+    margin-right: -75px;
+  }
+  .hero-image {
+    width: 75%;
+  }
+
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .about-content {
+    max-width: 85%;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  a.nav-link:before {
+    width: 20%;
+    left: 40%;
+  }
+
+  .hero,
+  .about,
+  .projects {
+    min-height: 50vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-heading {
+    margin: 0px 20px;
+    text-align: center;
+    margin-top: 30px;
+    animation: none;
+  }
+
+  .hero-heading h1 {
+    font-size: 68px;
+  }
+  .hero-heading p {
+    font-size: 22px;
+    margin-right: 0px;
+    animation: none;
+  }
+
+  .hero-image {
+    display: none;
+  }
+  .about {
+    margin-top: 50px;
+  }
+
+  .about-content {
+    max-width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .about-text {
+    flex: 3;
+  }
+
+  .about-text p {
+    padding: 20px;
+  }
+
+  .about-image {
+    width: 25%;
+    padding-top: 20px;
+  }
+
+  .image-col img {
+    display: none;
+  }
+
+  .projects-content {
+    max-width: 100%;
+    margin: 0px 30px;
+  }
+
+  .projects-content h3,
+  .projects-content p {
+    text-align: center !important;
+  }
+
+  .app-links-right {
+    justify-content: center;
+  }
+
+  .app-link-right {
+    width: 45%;
+    margin: 0px 10px 0px 10px;
+  }
+
+  .app-links-left {
+    justify-content: center;
+  }
+
+  .app-link-left {
+    width: 45%;
+    margin: 0px 10px 0px 10px;
+  }
+
+  .contact-info {
+    width: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-heading h1 {
+    font-size: 58px;
+  }
+
+  .hero-heading p {
+    font-size: 18px;
+  }
+
+  .contact-link {
+    padding: 3px 8px;
+    font-size: 15px;
+  }
+
+  .contact-info {
+    width: 38%;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-heading h1 {
+    font-size: 44px;
+  }
+
+  .hero-heading p {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 36px;
+  }
 }
